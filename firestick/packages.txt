@@ -1,0 +1,18 @@
+# Packages disabled by debloat.sh (one per line, "#" = comment).
+# Every one is disabled with "pm disable-user", NOT deleted, so restore.sh undoes it.
+# Core packages (launcher, Appstore, settings, OTA updates) are deliberately NOT listed.
+
+# --- Ads / "special offers" ---
+com.amazon.kso                      # Amazon special offers / sponsored content
+com.amazon.advertisingidsettings    # Advertising ID service
+
+# --- Telemetry / crash reporting ---
+com.amazon.device.crashmanager
+com.amazon.client.metrics
+com.amazon.dp.logger
+
+# --- Rarely used Amazon extras ---
+com.amazon.bueller.photos           # Amazon Photos (photo screensaver uses this)
+com.amazon.ags.app                  # Amazon GameCircle
+com.amazon.wifilocker               # Saves Wi-Fi passwords to your Amazon account
+com.amazon.imdb.tv.android.app      # Freevee (ad-supported, retired)
